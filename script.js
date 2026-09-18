@@ -191,7 +191,7 @@ function showValidationMessage() {
         overlay.style.display = 'flex';
         overlay.style.alignItems = 'center';
         overlay.style.justifyContent = 'center';
-        zIndex = 1000;
+        overlay.style.zIndex = 1000;
         overlay.innerHTML = `
             <div style="background: white; padding: 2rem; border-radius: 12px; text-align: center; max-width: 400px;">
                 <h3 style="margin-bottom: 1rem; color: #c0392b;">Missing Information</h3>
@@ -225,7 +225,7 @@ function handleCopyStory() {
         // Show temporary feedback
         const originalText = copyBtn.textContent;
         copyBtn.textContent = 'Copied!';
-        copyBtn.style.backgroundColor = var(--success-green);
+        copyBtn.style.backgroundColor = var(--success-color);
 
         setTimeout(() => {
             copyBtn.textContent = originalText;
