@@ -1,7 +1,18 @@
-# See http://wiki.githubignore.com for the full list of templates to ignore
-# Reload website
-site/
-# Logs
-logs/
-# Temp files
-temp/
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Binary files
+*.lock
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
