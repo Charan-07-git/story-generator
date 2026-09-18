@@ -14,10 +14,10 @@
         </header>
 
         <main>
-            <form id="story-form">
+            <form id="storyForm">
                 <div class="form-group">
-                    <label for="character-name">Character Name</label>
-                    <input type="text" id="character-name" placeholder="e.g., Arjun" required>
+                    <label for="characterName">Character Name</label>
+                    <input type="text" id="characterName" placeholder="e.g., Arjun" required>
                 </div>
 
                 <div class="form-group">
@@ -49,21 +49,21 @@
                     </select>
                 </div>
 
-                <button type="submit" id="generate-btn" class="btn-primary">Generate Story</button>
+                <button type="submit" id="generateStory" class="btn-primary">Generate Story</button>
             </form>
         </main>
 
-        <div id="story-section" class="story-card hidden">
+        <div id="storySection" class="story-card hidden">
             <h2>Your Story</h2>
-            <p id="story-text"></p>
-            <div class="story-meta">
+            <p id="storyText"></p>
+            <div id="storyMeta" class="story-meta">
                 <span id="story-character"></span>
                 <span id="story-location"></span>
                 <span id="story-genre"></span>
             </div>
             <div class="actions">
-                <button type="button" id="generate-another" class="btn-secondary">Generate Another</button>
-                <button type="button" id="copy-story" class="btn-secondary">Copy Story</button>
+                <button type="button" id="generateAnother" class="btn-secondary">Generate Another</button>
+                <button type="button" id="copyBtn" class="btn-secondary">Copy Story</button>
             </div>
         </div>
 
