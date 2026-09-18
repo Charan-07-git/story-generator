@@ -151,6 +151,7 @@ select option {
     font-size: 1.05rem;
     line-height: 1.7;
     min-height: 120px;
+    background-color: var(--card-background);
 }
 
 .story-actions {
