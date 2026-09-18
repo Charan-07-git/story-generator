@@ -129,15 +129,16 @@ select option {
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     overflow: hidden;
-    transform: translateY(20px);
+    visibility: hidden;
     opacity: 0;
-    transition: transform 0.4s ease, opacity 0.4s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     border-top: 4px solid var(--accent-color);
 }
 
 .story-card.visible {
-    transform: translateY(0);
+    visibility: visible;
     opacity: 1;
+    transform: translateY(0);
 }
 
 .story-card:hover {
