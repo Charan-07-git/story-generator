@@ -189,8 +189,8 @@ function showValidationMessage() {
         overlay.style.height = '100%';
         overlay.style.background = 'rgba(0, 0, 0, 0.5)';
         overlay.style.display = 'flex';
-        alignItems: 'center';
-        justifyContent: 'center';
+        overlay.style.alignItems = 'center';
+        overlay.style.justifyContent = 'center';
         zIndex = 1000;
         overlay.innerHTML = `
             <div style="background: white; padding: 2rem; border-radius: 12px; text-align: center; max-width: 400px;">
