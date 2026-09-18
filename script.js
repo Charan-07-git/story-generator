@@ -146,9 +146,7 @@ function displayStory(story, character, location, genre, mood) {
 
     // Show story section, hide form
     storySection.style.display = 'block';
-    storyCard.style.animation = 'none';
-    storyCard.offsetHeight; // trigger reflow
-    storyCard.style.animation = 'fadeInUp 0.5s ease forwards';
+    storyCard.classList.add('visible');
 
     // Show buttons
     copyBtn.disabled = false;
