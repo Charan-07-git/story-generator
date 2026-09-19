@@ -146,6 +146,11 @@ function displayStory(story, character, location, genre, mood) {
 
     // Show story section, hide form
     storySection.style.display = 'block';
+
+    // Force story card visible - remove hidden classes and set visible styles directly
+    storyCard.style.visibility = 'visible';
+    storyCard.style.opacity = '1';
+    storyCard.style.transform = 'translateY(0)';
     storyCard.classList.add('visible');
 
     // Show buttons
