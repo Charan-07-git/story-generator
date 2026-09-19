@@ -228,11 +228,11 @@ function handleCopyStory() {
         // Show temporary feedback
         const originalText = copyBtn.textContent;
         copyBtn.textContent = 'Copied!';
-        copyBtn.style.backgroundColor = var(--success-color);
+        copyBtn.style.backgroundColor = 'var(--success-color)';
 
         setTimeout(() => {
             copyBtn.textContent = originalText;
-            copyBtn.style.backgroundColor = var(--warning-orange);
+            copyBtn.style.backgroundColor = 'var(--warning-orange)';
         }, 2000);
     }).catch(() => {
         // Fallback for older browsers

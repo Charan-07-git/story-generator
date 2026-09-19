@@ -107,6 +107,58 @@ select option {
     margin-top: 10px;
 }
 
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #d4722b;
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+.btn-primary:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.btn-secondary {
+    padding: 10px 16px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color);
+}
+
+.btn-secondary:active {
+    transform: scale(0.98);
+}
+
+.btn-secondary:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
 .generate-btn:hover {
     background-color: #d4722b;
 }
@@ -152,6 +204,23 @@ select option {
     line-height: 1.7;
     min-height: 120px;
     background-color: var(--card-background);
+}
+
+.story-card h2 {
+    color: var(--text-primary);
+    padding: 20px 24px 0;
+    font-size: 1.4rem;
+}
+
+.story-meta {
+    padding: 20px 24px 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.story-meta strong {
+    color: var(--primary-color);
 }
 
 .story-actions {
